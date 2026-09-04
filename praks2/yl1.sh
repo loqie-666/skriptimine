@@ -1,4 +1,7 @@
 #!/bin/bash
 #Tervitamine kasutajaga
 
-echo Tere, Kevin !
+echo -n "Tere, "
+nimi="Kevin"
+echo -n "$nimi"
+echo "!"
