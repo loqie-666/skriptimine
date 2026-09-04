@@ -19,8 +19,8 @@ d) tekita lokaalne repositoorium git süsteemi jaoks antud kaustas
 git init
 
 remote seadistamine:
-e) git remote add nimi github:aadress
+a1) git remote add nimi github:aadress
 git remote add skriptimine git@github.com:loqie-666/reponimi.git
 
-f)git remote kontroll
+b1)git remote kontroll
 git remote -v
