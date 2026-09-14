@@ -1,9 +1,13 @@
 #!/bin/bash
 #
-# Skript kontrollib, kas kasutaja sisestatud täisarv on paaris või paaritu.
+# Skript kontrollib, kas käsurealt saadud täisarv on paaris või paaritu.
 
-echo -n "Sisesta suvaline täisarv: "
-read arv
+if [ $# -ne 1 ]; then
+    echo "Käivita see skript koos arvuga, mille paarsust soovid kontrollida. Näiteks: ./yl2"
+    exit 1
+fi
+
+arv=$1
 
 if [ $((arv % 2)) -eq 0 ]; then
     echo "Antud arv on paaris"
